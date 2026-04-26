@@ -1,0 +1,61 @@
+smiles,compound_id,compound_name,activity,molecular_class
+CCO,mol_001,Ethanol,0.12,alcohol
+CC(=O)O,mol_002,Acetic acid,0.45,carboxylic_acid
+c1ccccc1,mol_003,Benzene,0.08,aromatic
+CC(=O)Oc1ccccc1C(=O)O,mol_004,Aspirin,0.78,NSAID
+CN1C=NC2=C1C(=O)N(C(=O)N2C)C,mol_005,Caffeine,0.55,alkaloid
+CC12CCC3C(C1CCC2O)CCC4=CC(=O)CCC34C,mol_006,Testosterone,0.91,steroid
+OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O,mol_007,Glucose,0.03,sugar
+CC(C)Cc1ccc(cc1)C(C)C(=O)O,mol_008,Ibuprofen,0.82,NSAID
+CN(C)CCOC(c1ccccc1)c1ccccc1,mol_009,Diphenhydramine,0.67,antihistamine
+OC(=O)c1ccccc1O,mol_010,Salicylic acid,0.61,carboxylic_acid
+CC(=O)Nc1ccc(O)cc1,mol_011,Paracetamol,0.74,analgesic
+c1ccc2ccccc2c1,mol_012,Naphthalene,0.15,aromatic
+COc1ccc2c(c1)CC(N)C2,mol_013,Dopamine_analog,0.49,catecholamine
+O=C(O)c1ccc(N)cc1,mol_014,4-Aminobenzoic acid,0.33,amine
+CC1=CC2=C(C=C1C)N(C=N2)CC(=O)O,mol_015,Riboflavin_analog,0.28,vitamin
+c1ccc(cc1)C(=O)O,mol_016,Benzoic acid,0.41,carboxylic_acid
+NC(=O)c1cccnc1,mol_017,Nicotinamide,0.36,vitamin
+OC(=O)CCC(=O)O,mol_018,Succinic acid,0.22,dicarboxylic_acid
+CC1=C(C(=O)Nc2ccccc2)C(C)(C)CC1,mol_019,Nifedipine_analog,0.57,calcium_blocker
+O=c1[nH]c(=O)c2ccccc2[nH]1,mol_020,Barbituric acid,0.44,barbiturate
+c1cnc2ccccc2n1,mol_021,Quinoxaline,0.19,heterocycle
+Cc1ccc(S(N)(=O)=O)cc1,mol_022,Toluenesulfonamide,0.31,sulfonamide
+CC(O)c1ccccc1,mol_023,1-Phenylethanol,0.17,alcohol
+NC(Cc1ccccc1)C(=O)O,mol_024,Phenylalanine,0.05,amino_acid
+CC(N)C(=O)O,mol_025,Alanine,0.04,amino_acid
+NCC(=O)O,mol_026,Glycine,0.02,amino_acid
+CC(=O)c1ccc(O)cc1,mol_027,4-Hydroxyacetophenone,0.38,ketone
+O=C(O)c1ccc(O)cc1,mol_028,4-Hydroxybenzoic acid,0.42,carboxylic_acid
+Clc1ccccc1,mol_029,Chlorobenzene,0.13,haloarene
+Brc1ccccc1,mol_030,Bromobenzene,0.14,haloarene
+Fc1ccccc1,mol_031,Fluorobenzene,0.11,haloarene
+Ic1ccccc1,mol_032,Iodobenzene,0.16,haloarene
+COc1ccccc1,mol_033,Anisole,0.21,ether
+CCOc1ccccc1,mol_034,Phenetole,0.23,ether
+O=C1CCCCC1,mol_035,Cyclohexanone,0.27,ketone
+OC1CCCCC1,mol_036,Cyclohexanol,0.18,alcohol
+C1CCCCC1,mol_037,Cyclohexane,0.06,cycloalkane
+C1CCCC1,mol_038,Cyclopentane,0.05,cycloalkane
+c1ccc(cc1)O,mol_039,Phenol,0.35,phenol
+c1ccc(N)cc1,mol_040,Aniline,0.29,amine
+O=Cc1ccccc1,mol_041,Benzaldehyde,0.24,aldehyde
+CC(=O)c1ccccc1,mol_042,Acetophenone,0.32,ketone
+COC(=O)c1ccccc1,mol_043,Methyl benzoate,0.26,ester
+CCOC(=O)c1ccccc1,mol_044,Ethyl benzoate,0.30,ester
+c1ccc(cc1)Cc1ccccc1,mol_045,Diphenylmethane,0.20,hydrocarbon
+O=C(O)CC(=O)O,mol_046,Malonic acid,0.25,dicarboxylic_acid
+OC(CO)CO,mol_047,Glycerol,0.07,polyol
+CCCCCCCCCC(=O)O,mol_048,Decanoic acid,0.53,fatty_acid
+CCCCCCCCC(=O)O,mol_049,Nonanoic acid,0.50,fatty_acid
+CCCCCCCC(=O)O,mol_050,Octanoic acid,0.47,fatty_acid
+CCCCCCC(=O)O,mol_051,Heptanoic acid,0.43,fatty_acid
+CCCCCC(=O)O,mol_052,Hexanoic acid,0.39,fatty_acid
+CCCCC(=O)O,mol_053,Pentanoic acid,0.34,fatty_acid
+CCCC(=O)O,mol_054,Butanoic acid,0.29,fatty_acid
+CCC(=O)O,mol_055,Propanoic acid,0.23,fatty_acid
+c1ccc2[nH]ccc2c1,mol_056,Indole,0.37,heterocycle
+c1cnc[nH]1,mol_057,Imidazole,0.16,heterocycle
+c1ccncc1,mol_058,Pyridine,0.20,heterocycle
+c1ccoc1,mol_059,Furan,0.12,heterocycle
+c1ccsc1,mol_060,Thiophene,0.14,heterocycle
