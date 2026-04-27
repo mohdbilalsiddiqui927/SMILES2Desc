@@ -31,6 +31,7 @@ st.set_page_config(
 # CUSTOM CSS
 # ══════════════════════════════════════════════════════
 st.markdown("""
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap');
 
@@ -43,7 +44,7 @@ st.markdown("""
     --warn:     #f59e0b;
     --danger:   #ef4444;
     --text:     #e6edf3;
-    --muted:    #8b949e;
+    --muted:    #ffffff;
     --mono:     'DM Mono', monospace;
     --display:  'Syne', sans-serif;
     --body:     'DM Sans', sans-serif;
@@ -163,9 +164,19 @@ html, body, [class*="css"] {
 }
 
 [data-testid="stFileUploader"] {
-    background: var(--surface) !important;
-    border: 1.5px dashed var(--border) !important;
+    background: #161b22 !important;
+    border: 1.5px dashed #21262d !important;
     border-radius: 10px !important;
+    color: #ffffff !important;
+}
+/* Fix inner uploader text + drag area */
+[data-testid="stFileUploader"] * {
+    color: #e6edf3 !important;
+}
+
+/* Remove light background inside */
+[data-testid="stFileUploader"] section {
+    background-color: #161b22 !important;
 }
 [data-testid="stFileUploader"]:hover {
     border-color: rgba(0,212,160,0.5) !important;
@@ -253,13 +264,15 @@ html, body, [class*="css"] {
 .stProgress > div > div { background: var(--accent) !important; }
 
 [data-baseweb="tag"] {
-    background: rgba(0,212,160,0.12) !important;
-    border: 1px solid rgba(0,212,160,0.35) !important;
-    color: var(--accent) !important;
+    background: #0d1f1a !important;
+    border: 1px solid #00d4a0 !important;
+    color: #00d4a0 !important;
     font-family: var(--mono) !important;
     font-size: 0.73rem !important;
 }
-
+[data-baseweb="select"] > div {
+    background-color: #161b22 !important;
+}
 .info-pill {
     display: inline-flex;
     align-items: center;
@@ -311,6 +324,62 @@ html, body, [class*="css"] {
     color: #4a5568;
     line-height: 1.8;
     margin-top: 1rem;
+}
+/* FORCE sidebar text to be visible */
+[data-testid="stSidebar"] * {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* specifically target checkbox + labels */
+[data-testid="stSidebar"] .stCheckbox label span,
+[data-testid="stSidebar"] .stCheckbox p,
+[data-testid="stSidebar"] p {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+/* Fix input fields text color (Max heavy atoms, JAR path, XML) */
+[data-testid="stNumberInput"] input,
+[data-testid="stTextInput"] input {
+    color: #00d4a0 !important;        /* green text */
+    background-color: #161b22 !important;  /* dark background */
+}
+
+/* Placeholder text (optional) */
+[data-testid="stTextInput"] input::placeholder {
+    color: #8b949e !important;
+}
+/* Browse files button styling */
+[data-testid="stFileUploader"] button {
+    background-color: #00d4a0 !important;   /* green */
+    color: #0d1117 !important;              /* dark text */
+    border-radius: 8px !important;
+    border: none !important;
+    font-weight: 600 !important;
+}
+
+/* Hover effect */
+[data-testid="stFileUploader"] button:hover {
+    background-color: #00f0b5 !important;
+    color: #0d1117 !important;
+}
+/* Fix number input (+ / - buttons) */
+[data-testid="stNumberInput"] button {
+    background-color: #161b22 !important;  /* dark background */
+    color: #00d4a0 !important;             /* green + - */
+    border: 1px solid #00d4a0 !important;
+}
+
+/* Hover effect */
+[data-testid="stNumberInput"] button:hover {
+    background-color: #00d4a0 !important;
+    color: #0d1117 !important;
+}
+
+/* Input box itself */
+[data-testid="stNumberInput"] input {
+    background-color: #161b22 !important;
+    color: #00d4a0 !important;
 }
 </style>
 """, unsafe_allow_html=True)
